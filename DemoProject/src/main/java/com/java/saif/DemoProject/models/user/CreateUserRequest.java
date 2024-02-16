@@ -3,7 +3,7 @@ package com.java.saif.DemoProject.models.user;
 
 import jakarta.validation.constraints.*;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class CreateUserRequest {
     @NotNull(message = "Username should not be null")
