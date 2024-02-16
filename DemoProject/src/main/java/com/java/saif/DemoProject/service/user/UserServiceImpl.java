@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
         user.setLastName(createUserRequest.getLastName());
         user.setEmail(createUserRequest.getEmail());
         user.setAge(createUserRequest.getAge());
-        user.setDob(createUserRequest.getDob());
+        user.setDob((java.sql.Date) createUserRequest.getDob());
         return userRepository.createUser(user);
     }
 
