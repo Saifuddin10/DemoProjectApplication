@@ -1,13 +1,12 @@
 package com.java.saif.DemoProject.repository.permission;
 
 import com.java.saif.DemoProject.models.permission.Permission;
-import com.java.saif.DemoProject.repository.PermissionDAO;
+import com.java.saif.DemoProject.DAO.PermissionDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class PermissionRepositoryImpl implements PermissionRepository {

@@ -1,8 +1,7 @@
 package com.java.saif.DemoProject.repository.user;
 
 import com.java.saif.DemoProject.models.user.User;
-import com.java.saif.DemoProject.repository.UserDAO;
-import com.java.saif.DemoProject.repository.user.UserRepository;
+import com.java.saif.DemoProject.DAO.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

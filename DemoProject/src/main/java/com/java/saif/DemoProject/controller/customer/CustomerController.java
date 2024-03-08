@@ -3,8 +3,6 @@ package com.java.saif.DemoProject.controller.customer;
 import com.java.saif.DemoProject.models.customer.CreateCustomerRequest;
 import com.java.saif.DemoProject.models.customer.Customer;
 import com.java.saif.DemoProject.models.customer.UpdateCustomerRequest;
-import com.java.saif.DemoProject.models.permission.Permission;
-import com.java.saif.DemoProject.models.user.CreateUserRequest;
 import com.java.saif.DemoProject.service.customer.CustomerService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -52,7 +50,7 @@ public class CustomerController {
 
     @CrossOrigin(value = "*")
     @DeleteMapping("/customers/{customerId}")
-    @Operation(summary = "Create Customer", responses = {
+    @Operation(summary = "Delete Customer", responses = {
             @ApiResponse(
                     description = "OK",
                     responseCode = "200",

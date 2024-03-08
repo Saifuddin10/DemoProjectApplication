@@ -1,4 +1,4 @@
-package com.java.saif.DemoProject.repository;
+package com.java.saif.DemoProject.DAO;
 
 import com.java.saif.DemoProject.models.permission.Permission;
 import org.springframework.data.jpa.repository.JpaRepository;

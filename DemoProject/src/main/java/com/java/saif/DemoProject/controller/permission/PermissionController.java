@@ -1,11 +1,11 @@
 package com.java.saif.DemoProject.controller.permission;
 
 import com.java.saif.DemoProject.exception.UserNotFoundException;
-import com.java.saif.DemoProject.models.customer.CreateCustomerRequest;
 import com.java.saif.DemoProject.models.permission.CreatePermissionRequest;
 import com.java.saif.DemoProject.models.permission.Permission;
 import com.java.saif.DemoProject.models.permission.UpdatePermissionRequest;
 import com.java.saif.DemoProject.service.permission.PermissionService;
+import dto.AuthRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -14,7 +14,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 
 @RestController

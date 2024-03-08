@@ -1,4 +1,4 @@
-package com.java.saif.DemoProject.repository;
+package com.java.saif.DemoProject.DAO;
 
 import com.java.saif.DemoProject.models.customer.Customer;
 import com.java.saif.DemoProject.models.permission.Permission;

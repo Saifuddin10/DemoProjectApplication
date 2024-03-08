@@ -1,11 +1,10 @@
 package com.java.saif.DemoProject.repository.customer;
 
 import com.java.saif.DemoProject.models.customer.Customer;
-import com.java.saif.DemoProject.repository.CustomerDAO;
+import com.java.saif.DemoProject.DAO.CustomerDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
