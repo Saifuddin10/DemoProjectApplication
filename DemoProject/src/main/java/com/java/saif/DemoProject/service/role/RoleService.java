@@ -1,5 +1,6 @@
 package com.java.saif.DemoProject.service.role;
 
+import com.java.saif.DemoProject.exception.UserNotFoundException;
 import com.java.saif.DemoProject.models.role.CreateRoleRequest;
 import com.java.saif.DemoProject.models.role.Role;
 import com.java.saif.DemoProject.models.role.UpdateRoleRequest;
@@ -9,7 +10,7 @@ import java.util.List;
 public interface RoleService {
     Role createRole(CreateRoleRequest createRoleRequest);
 
-    Role getRoleById(long roleId);
+    Role getRoleById(long roleId) throws UserNotFoundException;
 
     void deleteRoleById(long roleId);
 

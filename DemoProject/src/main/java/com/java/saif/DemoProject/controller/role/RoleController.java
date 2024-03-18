@@ -1,5 +1,6 @@
 package com.java.saif.DemoProject.controller.role;
 
+import com.java.saif.DemoProject.exception.UserNotFoundException;
 import com.java.saif.DemoProject.models.role.CreateRoleRequest;
 import com.java.saif.DemoProject.models.role.Role;
 import com.java.saif.DemoProject.models.role.UpdateRoleRequest;
@@ -46,7 +47,7 @@ public class RoleController {
                     content = @Content(schema = @Schema(implementation = Role.class))
             )
     })
-    public Role getRoleById(@PathVariable(name = "id") long roleId) {
+    public Role getRoleById(@PathVariable(name = "id") long roleId) throws UserNotFoundException {
         Role role = roleService.getRoleById(roleId);
         return new ResponseEntity<>(role, HttpStatus.OK).getBody();
     }
@@ -98,5 +99,5 @@ public class RoleController {
     public Role updateRole(@PathVariable long roleId, @RequestBody UpdateRoleRequest updateRoleRequest) {
         return roleService.updateRole(roleId, updateRoleRequest);
     }
-}
 
+}

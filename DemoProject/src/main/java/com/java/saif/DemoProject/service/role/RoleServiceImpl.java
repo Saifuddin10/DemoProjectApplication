@@ -1,5 +1,6 @@
 package com.java.saif.DemoProject.service.role;
 
+import com.java.saif.DemoProject.exception.UserNotFoundException;
 import com.java.saif.DemoProject.models.role.CreateRoleRequest;
 import com.java.saif.DemoProject.models.role.Role;
 import com.java.saif.DemoProject.models.role.UpdateRoleRequest;
@@ -27,7 +28,11 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public Role getRoleById(long roleId) {
+    public Role getRoleById(long roleId) throws UserNotFoundException {
+        Role role = roleRepository.getRoleById(roleId);
+        if (role == null) {
+            throw new UserNotFoundException("ID NOT FOUND : " + roleId);
+        }
         return roleRepository.getRoleById(roleId);
     }
 
