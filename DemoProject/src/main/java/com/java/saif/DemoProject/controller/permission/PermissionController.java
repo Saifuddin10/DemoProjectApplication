@@ -5,7 +5,6 @@ import com.java.saif.DemoProject.models.permission.CreatePermissionRequest;
 import com.java.saif.DemoProject.models.permission.Permission;
 import com.java.saif.DemoProject.models.permission.UpdatePermissionRequest;
 import com.java.saif.DemoProject.service.permission.PermissionService;
-import dto.AuthRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

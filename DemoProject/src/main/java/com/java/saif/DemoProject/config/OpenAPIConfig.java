@@ -20,7 +20,7 @@ public class OpenAPIConfig {
                 .info(new Info()
                         .title("Demo Project for Spring Boot")
                         .version("3.0.0")
-                        .contact(new Contact().name("Saifuddin").email("xyz@email.com"))
+                        .contact(new Contact().name("Saifuddin").email("saifuddin@skillbridge.tech"))
                         .license(new License().name("Demo Project")))
                 .components(new Components());
     }

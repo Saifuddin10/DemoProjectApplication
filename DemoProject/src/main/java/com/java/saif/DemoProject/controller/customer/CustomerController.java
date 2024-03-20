@@ -1,5 +1,6 @@
 package com.java.saif.DemoProject.controller.customer;
 
+import com.java.saif.DemoProject.dto.AuthRequest;
 import com.java.saif.DemoProject.models.customer.CreateCustomerRequest;
 import com.java.saif.DemoProject.models.customer.Customer;
 import com.java.saif.DemoProject.models.customer.UpdateCustomerRequest;
@@ -88,4 +89,9 @@ public class CustomerController {
     public Customer updateCustomer(@PathVariable long customerId, @RequestBody UpdateCustomerRequest updateCustomerRequest) {
         return customerService.updateCustomer(customerId, updateCustomerRequest);
     }
+
+//    @PostMapping("/authenticate")
+//    public String authenticateAndGetToken(@RequestBody AuthRequest authRequest){
+//
+//    }`f
 }
