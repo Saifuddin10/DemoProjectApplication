@@ -90,8 +90,4 @@ public class CustomerController {
         return customerService.updateCustomer(customerId, updateCustomerRequest);
     }
 
-//    @PostMapping("/authenticate")
-//    public String authenticateAndGetToken(@RequestBody AuthRequest authRequest){
-//
-//    }`f
 }

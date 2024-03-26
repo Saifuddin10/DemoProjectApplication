@@ -14,6 +14,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
+
     @Override
     public Customer createCustomer(CreateCustomerRequest createCustomerRequest) {
         Customer customer = new Customer();
@@ -34,7 +35,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomerById(long customerId) {
-         customerRepository.deleteCustomerById(customerId);
+        customerRepository.deleteCustomerById(customerId);
 
     }
 
@@ -55,3 +56,5 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.updateCustomer(customer);
     }
 }
+
+

@@ -56,5 +56,3 @@ public class Permission {
         this.type = type;
     }
 }
-
-
