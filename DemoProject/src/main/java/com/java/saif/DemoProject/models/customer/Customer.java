@@ -27,6 +27,7 @@ public class Customer {
     @JoinColumn(name = "sub", referencedColumnName = "id")
     private List<Permission> permissions;
 
+
     public Customer() {
 
     }
