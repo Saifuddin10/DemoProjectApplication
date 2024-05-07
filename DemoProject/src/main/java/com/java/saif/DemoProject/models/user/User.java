@@ -80,4 +80,5 @@ public class User {
     public void setDob(Date dob) {
         this.dob = dob;
     }
+
 }

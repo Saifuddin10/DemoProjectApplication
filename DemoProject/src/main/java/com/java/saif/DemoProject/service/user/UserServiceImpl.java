@@ -4,7 +4,6 @@ import com.java.saif.DemoProject.models.user.CreateUserRequest;
 import com.java.saif.DemoProject.models.user.UpdateUserRequest;
 import com.java.saif.DemoProject.models.user.User;
 import com.java.saif.DemoProject.repository.user.UserRepository;
-import com.java.saif.DemoProject.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +28,7 @@ public class UserServiceImpl implements UserService {
         user.setLastName(createUserRequest.getLastName());
         user.setEmail(createUserRequest.getEmail());
         user.setAge(createUserRequest.getAge());
-        user.setDob((java.sql.Date) createUserRequest.getDob());
+        user.setDob(createUserRequest.getDob());
         return userRepository.createUser(user);
     }
 
@@ -63,6 +62,4 @@ public class UserServiceImpl implements UserService {
     public User getUserByFirstName(String name) {
         return userRepository.getUserByFirstName(name);
     }
-
-
 }

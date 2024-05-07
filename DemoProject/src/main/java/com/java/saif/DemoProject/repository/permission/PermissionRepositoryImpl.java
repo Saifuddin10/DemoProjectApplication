@@ -52,4 +52,9 @@ public class PermissionRepositoryImpl implements PermissionRepository {
         return permissionDAO.save(permission);
     }
 
+    @Override
+    public Permission getPermissionByName(String permissionName) {
+        return permissionDAO.findByName(permissionName);
+    }
+
 }

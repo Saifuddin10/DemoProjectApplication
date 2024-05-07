@@ -38,7 +38,7 @@ public class CustomerController {
 
     @CrossOrigin(value = "*")
     @GetMapping("/customers/{id}")
-    @Operation(summary = "Create Customer", responses = {
+    @Operation(summary = "Get Customer By Id", responses = {
             @ApiResponse(
                     description = "OK",
                     responseCode = "200",

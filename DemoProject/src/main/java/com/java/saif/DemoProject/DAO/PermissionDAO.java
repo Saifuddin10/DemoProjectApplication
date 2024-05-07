@@ -12,4 +12,6 @@ public interface PermissionDAO extends JpaRepository<Permission, Long> {
     List<Permission> findAllByDescription(String description);
 
     List<Permission> findAllByType(String type);
+
+    Permission findByName(String permissionName);
 }

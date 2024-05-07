@@ -18,4 +18,6 @@ public interface UserRepository {
     User updateUser(User user);
 
     User getUserByFirstName(String name);
+
+    User getUserByEmail(String userEmail);
 }

@@ -14,4 +14,6 @@ public interface PermissionRepository {
     List<Permission> listPermissions(Long id, String name, String description, String type);
 
     Permission updatePermissionRequest(Permission permission);
+
+    Permission getPermissionByName(String permissionName);
 }

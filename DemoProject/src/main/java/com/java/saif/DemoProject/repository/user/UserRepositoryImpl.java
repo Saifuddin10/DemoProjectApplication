@@ -69,4 +69,9 @@ public class UserRepositoryImpl implements UserRepository {
     public User getUserByFirstName(String name) {
         return userDAO.findByFirstName(name);
     }
+
+    @Override
+    public User getUserByEmail(String userEmail) {
+        return userDAO.findByEmail(userEmail);
+    }
 }

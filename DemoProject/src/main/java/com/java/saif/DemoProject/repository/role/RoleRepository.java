@@ -14,4 +14,6 @@ public interface RoleRepository {
     List<Role> listRoles(Long id, String name, String description, String type, String displayName, boolean internal);
 
     Role updateRole(Role role);
+
+    Role getRoleByName(String roleName);
 }

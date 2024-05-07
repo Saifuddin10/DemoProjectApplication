@@ -26,16 +26,20 @@ public class PermissionServiceImpl implements PermissionService {
     }
 
     @Override
-    public Permission getPermissionById(Long permissionId) throws UserNotFoundException {
+    public Permission getPermissionById(Long permissionId) {
         Permission permission = permissionRepository.getPermissionById(permissionId);
         if (permission == null){
             throw new UserNotFoundException("ID NOT FOUND : " + permissionId);
         }
-        return permissionRepository.getPermissionById(permissionId);
+        return permission;
     }
 
     @Override
     public void deletePermissionById(long permissionId) {
+        Permission permission = permissionRepository.getPermissionById(permissionId);
+        if (permission == null){
+            throw new UserNotFoundException("ID NOT FOUND : " + permissionId);
+        }
         permissionRepository.deletePermissionById(permissionId);
     }
 
@@ -61,5 +65,4 @@ public class PermissionServiceImpl implements PermissionService {
         }
         return permissionRepository.updatePermissionRequest(permission);
     }
-
 }
